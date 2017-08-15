@@ -1,0 +1,74 @@
+ <!DOCTYPE html5>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Camposha.info</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<nav class="green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">{{site_title}}</a>
+      <ul class="right hide-on-med-and-down">
+     <li><a href="/">Home</a></li></ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+<div class="container">
+
+     <h1 class="header center orange-text">{{ title }}</h1>
+   <h5 class="header center col s12 light">{{description}}</h5>
+      <p>Here are our galaxies</p>
+      <ul class="collection with-header">
+        <li class="collection-header"><h4>{{list_header}}</h4></li>
+        {% for galaxy in galaxies %}
+        <li class="collection-item"><a href="#">{{galaxy}}</a></li>
+        {% endfor %}
+      </ul>
+
+<br>
+  <br>
+</div>
+  <footer class="page-footer light-green">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">Galactic News brings the latest planetary, stellar and galactic news.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Reach Us</h5>
+          <ul>
+            <li><a class="white-text" href="#!">About Us</a></li>
+            <li><a class="white-text" href="#!">Contact Us</a></li>
+            <li><a class="white-text" href="#!">News</a></li>
+            <li><a class="white-text" href="#!">Terms</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Linkedn</a></li>
+            <li><a class="white-text" href="#!">Google Plus</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://camposha.info">Camposha</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  </body>
+</html>
